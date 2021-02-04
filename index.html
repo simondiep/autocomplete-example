@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Form autocomplete example</h1>
+
+    <p>Useful for vetting out how browsers handle or ignore these settings.</p>
+
+    <p>Testing Steps</p>
+    <ul>
+      <li>Fill in and SUBMIT the form</li>
+      <li>Click back button</li>
+      <li>Refresh the page</li>
+      <li>Click through each field to observe the autocomplete behavior</li>
+    </ul>
+
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <label for="field1On">Field 1 (autocomplete="on"):</label>
+      <input type="text" id="field1On" name="field1On" autocomplete="on"><br><br>
+      <label for="field2Default">Field 2 (Autocomplete not explicitly set):</label>
+      <input type="text" id="field2Default" name="field2Default"><br><br>
+      <label for="field3off">Field 3 (autocomplete="off"):</label>
+      <input type="text" id="field3off" name="field3off" autocomplete="off"><br><br>
+      <label for="field4blah">Field 4 (autocomplete="blah"):</label>
+      <input type="text" id="field4blah" name="field4blah" autocomplete="blah"><br><br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
