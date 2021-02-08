@@ -13,6 +13,7 @@
       <li>Click through each field to observe the autocomplete behavior</li>
     </ul>
 
+    <h3>Form element without autocomplete set</h3>
     <form action="https://jsonplaceholder.typicode.com/posts" method="post">
       <label for="field1On">Field 1 (autocomplete="on"):</label>
       <input type="text" id="field1On" name="field1On" autocomplete="on"><br><br>
@@ -28,6 +29,28 @@
       <input type="text" id="lastName" name="lastName" autocomplete="new-password"><br><br>
       <label for="phoneNumber">phoneNumber (autocomplete="off"):</label>
       <input type="text" id="phoneNumber" name="phoneNumber" autocomplete="off"><br><br>
+      <input type="submit">
+    </form>
+
+    <h3>Form element with autocomplete="off"</h3>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post" autocomplete="off">
+      <label for="firstName">firstName:</label>
+      <input type="text" id="firstName" name="firstName"><br><br>
+      <label for="lastName">lastName:</label>
+      <input type="text" id="lastName" name="lastName"><br><br>
+      <label for="phoneNumber">phoneNumber:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+      <input type="submit">
+    </form>
+
+    <h3>form element with autocomplete="new-password"</h3>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post" autocomplete="off">
+      <label for="firstName">firstName:</label>
+      <input type="text" id="firstName" name="firstName"><br><br>
+      <label for="lastName">lastName:</label>
+      <input type="text" id="lastName" name="lastName"><br><br>
+      <label for="phoneNumber">phoneNumber:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
       <input type="submit">
     </form>
   </body>
